@@ -238,7 +238,7 @@ myForm.addEventListener("submit",event => {
         .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
         .join('&');
     console.log(query);
-    let url = 'http://35.223.16.1:8000/?' +query
+    let url = 'https://35.223.16.1:8000/?' +query
     var requestOptions = {
         method: 'POST',
         body: formData,
@@ -253,8 +253,6 @@ myForm.addEventListener("submit",event => {
         app.style.display = "none";
         load.style.display = "none";
         output.setAttribute('src', img_url);
-        // output.style.backgroundImage = "url('./app/results/test1.jpg')";
-        // output.style.backgroundSize = "cover";
         console.log("result printed");
     })
     .catch(error => console.log('error', error));
