@@ -239,7 +239,7 @@ myForm.addEventListener("submit",event => {
         .join('&');
     console.log(query);
     // let url = 'http://127.0.0.1:8000/?' + query
-    let url = 'https://35.223.16.1:8000/?' +query
+    let url = 'http://35.223.16.1:8000/?' +query
     var requestOptions = {
         method: 'POST',
         body: formData,
